@@ -871,6 +871,7 @@ body::before {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 500px;
+  gap: 20px;
   overflow: hidden;
 }
 
@@ -1408,7 +1409,7 @@ body::before {
   background: var(--orange-dark);
   transform: translateY(-3px);
   box-shadow:
-    4px 6px 0px #ffffff,
+    4px 6px 0px #868585,
     0 8px 20px rgba(0, 0, 0, 0.15);
 }
 

@@ -141,14 +141,7 @@ const approachObserver = new IntersectionObserver(
 const approachSection = document.querySelector(".approach");
 if (approachSection) approachObserver.observe(approachSection);
 
-document.querySelectorAll(".approach__item").forEach((item) => {
-  item.querySelector(".approach__item-header").addEventListener("click", () => {
-    document
-      .querySelectorAll(".approach__item")
-      .forEach((i) => i.classList.remove("approach__item--active"));
-    item.classList.add("approach__item--active");
-  });
-});
+
 
 const realityObserver = new IntersectionObserver(
   (entries) => {
