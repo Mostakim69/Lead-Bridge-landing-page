@@ -1428,6 +1428,122 @@ body::before {
   }
 }
 
+.contact {
+  background: #fff;
+  padding: 80px 48px 0;
+}
+
+/* Header */
+.contact__header {
+  text-align: center;
+  padding: 36px 32px 32px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.contact__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  /* background: #fff;
+  border: 1.5px solid #ebebeb; */
+  border-radius: 50px;
+  padding: 7px 16px 7px 8px;
+  font-size: 13px;
+  color: var(--text-mid);
+  /* box-shadow: var(--shadow); */
+  margin-bottom: 16px;
+}
+.contact__badge-text strong {
+  color: var(--orange);
+}
+
+.contact__headline {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(30px, 4vw, 50px);
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.contact__highlight {
+  color: var(--orange);
+}
+
+.contact__sub {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-light);
+  letter-spacing: 0.03em;
+}
+.contact__booking {
+  display: grid;
+  /* grid-template-columns: 280px 1px 1fr; */
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+.contact__booking img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Footer bar */
+.contact__footer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 4px 24px;
+  font-family: "Oswald", sans-serif;
+  font-size: 12.5px;
+  color: var(--text-light);
+  border-top: 1px solid #f0f0f0;
+  margin-top: 16px;
+}
+.contact__email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.contact__note strong {
+  color: var(--orange);
+  margin-right: 4px;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .contact {
+    padding: 56px 20px 0;
+  }
+  .contact__booking {
+    grid-template-columns: 1fr;
+  }
+  .booking__divider {
+    width: 100%;
+    height: 1px;
+  }
+  .booking__right {
+    padding: 28px 20px;
+  }
+  .booking__left {
+    padding: 28px 20px;
+  }
+  .contact__footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+ 
+/* footer section */
+
 .footer {
   background: #1e1e1e;
   border-top: 1px solid #2a2a2a;

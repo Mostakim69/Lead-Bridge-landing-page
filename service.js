@@ -177,3 +177,7 @@ const howweObserver = new IntersectionObserver(
   },
   { threshold: 0.12 },
 );
+
+document
+  .querySelectorAll(".howwe-card")
+  .forEach((el) => howweObserver.observe(el));
